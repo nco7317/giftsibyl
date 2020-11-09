@@ -237,7 +237,20 @@ p {
 .primary {
 margin-top: 15em;
 }
+.col {
+flex: 1;
+flex-direction: column;
+  flex-basis: 0;
+}
 
+.row {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+}
 
 /* form {
   margin-top: em;

@@ -260,12 +260,23 @@ p {
 		width: 500px;
 		font-size: 20px;
 		padding-bottom: 3em;
-    background-color: red;
+    background-color: red
 	}
 	.navbar {
 	flex-wrap: wrap;
 	}
 
+
+	form {
+		flex-grow: 1;
+		flex-basis: 0;
+	  flex-direction: column;
+	  align-items: center;
+		justify-content: center;
+		flex-shrink: 1;
+		min-height: 50px;
+    background-color: rgba(255,255,255,0.1);
+	}
 
 
 }
@@ -287,7 +298,8 @@ form {
   .navbar,
   .row,
   .col,
-  .form-items {
+  .form-items,
+  form {
   display: flex;
 }
 .main-header {

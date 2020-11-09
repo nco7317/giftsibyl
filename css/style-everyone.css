@@ -324,7 +324,28 @@ label {
 
 
 /* Media Containers*/
-@media (min-width: 769px) {
+@media (max-width: 480px) {
+	.main-header,
+  .navbar {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	}
+.primary {
+margin-top: 15em;
+}
+.col {
+flex-grow: 1;
+flex-basis: 0;
+flex-direction: column;
+}
+
+.row {
+flex-wrap: wrap;
+margin-top: 20em;
+}
+
+@media (min-width: 481px) {
   /* -------Base--------------------*/
   .main-header{
     width: 100%;
@@ -357,7 +378,7 @@ flex-direction: column;
 }
 
 }
-@media (min-width: 1025px) {
+@media (min-width: 750px) {
     /* -------Base--------------------*/
 	.main-header{
     width: 100%;

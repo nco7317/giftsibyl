@@ -221,6 +221,7 @@ align-items: center;
 justify-content: center;
 }
 
+
 }
 @media (min-width: 300px) {
   /* -------Base--------------------*/
@@ -257,7 +258,7 @@ align-items: center;
   flex-wrap: wrap;
 }
 .banner {
-  padding-top: 10em;
+  margin-top: 10em;
 }
 }
 @media (min-width: 1025px) {

@@ -330,9 +330,10 @@ label {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+  text-align: center;
 	}
 .primary {
-margin-top: 15em;
+margin-top: 10em;
 }
 .col {
 flex-grow: 1;

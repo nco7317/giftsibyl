@@ -225,12 +225,14 @@ flex: 1;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+height: auto;
 }
 .row {
   flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .banner {
   margin-top: 20em;

@@ -228,12 +228,7 @@ p {
 
 @media (max-width: 480px) {
 
-  html, body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative
-  }
+
 	h2 {
 		text-align: center;
 	}

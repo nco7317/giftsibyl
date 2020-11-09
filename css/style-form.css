@@ -267,17 +267,6 @@ p {
 	}
 
 
-	form {
-		flex-grow: 1;
-		flex-basis: 0;
-	  flex-direction: column;
-	  align-items: center;
-		justify-content: center;
-		flex-shrink: 1;
-		min-height: 50px;
-    background-color: rgba(255,255,255,0.1);
-	}
-
 
 }
 
@@ -298,8 +287,7 @@ form {
   .navbar,
   .row,
   .col,
-  .form-items,
-  form {
+  .form-items {
   display: flex;
 }
 .main-header {

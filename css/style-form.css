@@ -274,7 +274,7 @@ p {
 
 }
 
-@media (min-width: 300px) {
+@media (min-width: 481px) {
   /* -------Base--------------------*/
 form {
   max-width: 450px;
@@ -288,9 +288,11 @@ form {
   }
 /* -----------------------Flex--------------------*/
   .main-header,
+  .navbar,
   .row,
   .col,
-  .form-items {
+  .form-items,
+  form {
   display: flex;
 }
 .main-header {

@@ -236,14 +236,15 @@ body {
   position: relative
 }
   .main-header{
-  		width: 500px;
+  		width: 100%;
   		position: fixed top;
   	}
   	.row {
-  		width: 500px;
+  		width: 100%;
   		flex-wrap: wrap;
   	  justify-content: center;
   	  align-items: center;
+      margin-top: 15em;
   	}
 
   	.col {
@@ -254,9 +255,9 @@ body {
   		height: auto;
   	}
   	.main-footer {
-  		width: 500px;
+  		width: 100%;
   		font-size: 20px;
-  		background-color: blue;
+  		background-color: green;
   		padding-bottom: 3em;
       position: fixed bottom;
   	}

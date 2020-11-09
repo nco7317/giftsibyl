@@ -237,7 +237,7 @@ body {
 }
   .main-header{
   		width: 500px;
-  		position: relative;
+  		position: fixed top;
   	}
   	.row {
   		width: 500px;

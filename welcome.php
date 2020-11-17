@@ -53,7 +53,7 @@ require 'php/connection.php';
 
 
 		<footer class="main-footer">
-			<p><small>&copy;2020 College of Technology, University of Houston</small></p>
+			<p><small>&copy;Gift Sibyl by Nnamdi</small></p>
 		</footer>
 
 

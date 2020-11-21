@@ -121,7 +121,6 @@ h2 {
 /* --------------------------- Table --------------------------------- */
 table{
   width:100%;
-  table-layout: fixed;
 }
 tr {
 
@@ -152,6 +151,7 @@ td{
   font-size: 12px;
   color: #fff;
   border-bottom: solid 1px rgba(255,255,255,0.1);
+  word-wrap: break-word;
 }
 
 /* --------------------------- Form --------------------------------- */
@@ -167,9 +167,6 @@ form {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 300;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 
 input[type="text"],
@@ -301,10 +298,6 @@ label {
   flex-grow: 1;
   flex-basis: 0;
 }
-.inst {
-  color: #fff;
-  list-style: square;
-}
 .table-style a {
   color: #fff;
 }
@@ -406,7 +399,8 @@ tr{
   .navbar,
   .row,
   .col,
-  .form-items
+  .form-items,
+  tr
   {
   display: flex;
 }
@@ -449,11 +443,11 @@ table{
 .primary {
   margin-top: 20em;
 }
-/* tr{
+tr{
   width:100%;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 }
 @media (min-width: 750px) {
@@ -482,7 +476,7 @@ flex-grow: 1;
 #g_notes {
   margin-bottom: 0;
 }
-/* tr{
+tr{
   width:100%;
   flex-direction: row;
   flex-grow: 1;
@@ -490,7 +484,7 @@ flex-grow: 1;
   align-items: center;
   justify-content: space-around;
 
-} */
+}
 
 
 }

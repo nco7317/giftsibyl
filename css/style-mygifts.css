@@ -298,7 +298,10 @@ label {
   flex-grow: 1;
   flex-basis: 0;
 }
-
+.inst {
+  color: #fff;
+  list-style: square;
+}
 .table-style a {
   color: #fff;
 }

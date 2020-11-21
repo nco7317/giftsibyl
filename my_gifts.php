@@ -28,12 +28,14 @@ session_start();
 
 <div class="primary col">
   <h2>Instructions</h2>
+  <form class="inst">
   <ul>
     <li>Name: Enter a name</li>
     <li>Price: No need to use dollar sign. Round up the price to the nearest whole number - ex: 19.99 -> 20</li>
     <li>Link: Enter the full link of the site</li>
     <li>Notes: Enter notes if necessary</li>
   </ul>
+</form>
   <br>
   <br>
   <h2>Insert a gift you want here!</h2>
@@ -60,19 +62,20 @@ session_start();
     </div>
 
     <div class="secondary col">
-    <!--sign in form-->
-
-    <?php echo"<h2>".$_SESSION['first_name']." ".$_SESSION['last_name']."'s List</h2>" ?>
 <form method="post" class="form-items" action='php/delete.php'>
 <table class="table-style">
-  <tr>
-  <th>Gift Name</th>
-  <th>Price</th>
-  <th>Where to buy</th>
-  <th>Notes</th>
-  <th>Select</th>
-  <th>Delete</th>
-</tr>
+<?php
+require 'php/connection.php';
+echo"<h2>".$_SESSION['first_name']." ".$_SESSION['last_name']."'s List</h2>"
+echo"<tr>";
+echo"<th>Gift Name</th>";
+echo"<th>Price</th>";
+echo"<th>Where to buy</th>";
+echo"<th>Notes</th>";
+echo"<th>Select</th>";
+echo"<th>Delete</th>";
+echo"</tr>";
+?>
   <?php
 require 'php/connection.php';
 $sql = "SELECT * FROM user_lists WHERE user_id = '".$_SESSION['user_id']."'";

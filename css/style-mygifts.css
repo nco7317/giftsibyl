@@ -403,8 +403,7 @@ tr{
   .navbar,
   .row,
   .col,
-  .form-items,
-  tr
+  .form-items
   {
   display: flex;
 }
@@ -447,11 +446,11 @@ table{
 .primary {
   margin-top: 20em;
 }
-tr{
+/* tr{
   width:100%;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 }
 @media (min-width: 750px) {
@@ -480,7 +479,7 @@ flex-grow: 1;
 #g_notes {
   margin-bottom: 0;
 }
-tr{
+/* tr{
   width:100%;
   flex-direction: row;
   flex-grow: 1;
@@ -488,7 +487,7 @@ tr{
   align-items: center;
   justify-content: space-around;
 
-}
+} */
 
 
 }

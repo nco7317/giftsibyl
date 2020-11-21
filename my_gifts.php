@@ -67,27 +67,19 @@ session_start();
     <?php echo"<h2>".$_SESSION['first_name']." ".$_SESSION['last_name']."'s List</h2>" ?>
 <form method="post" class="form-items" action='php/delete.php'>
 <table class="table-style">
-  <!-- <tr>
+  <tr>
   <th>Gift Name</th>
   <th>Price</th>
   <th>Where to buy</th>
   <th>Notes</th>
   <th>Select</th>
   <th>Delete</th>
-</tr> -->
+</tr>
   <?php
 require 'php/connection.php';
 $sql = "SELECT * FROM user_lists WHERE user_id = '".$_SESSION['user_id']."'";
 $result = mysqli_query($conn, $sql);
  while ($row = mysqli_fetch_assoc($result)) {
- echo"<tr>";
- echo"<th>Gift Name</th>";
- echo"<th>Price</th>";
- echo"<th>Where to buy</th>";
- echo"<th>Notes</th>";
-  echo"<th>Select</th>";
-   echo"<th>Delete</th>";
- echo"</tr>";
 echo"<tr class='ttr'>";
 echo"<td>".$row['g_name']."</td>";
 echo"<td>$".$row['g_price']."</td>";

@@ -27,6 +27,15 @@ session_start();
   <div class="row">
 
 <div class="primary col">
+  <h2>Instructions</h2>
+  <ul>
+    <li>Name: Enter a name</li>
+    <li>Price: No need to use dollar sign. Round up the price to the nearest whole number - ex: 19.99 -> 20</li>
+    <li>Link: Enter the full link of the site</li>
+    <li>Notes: Enter notes if necessary</li>
+  </ul>
+  <br>
+  <br>
   <h2>Insert a gift you want here!</h2>
     <form action="php/mylist.php" method="post" enctype="multipart/form-data">
 

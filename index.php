@@ -12,8 +12,8 @@
     <header id="top" class="main-header">
 				<h1 class = "name">Gift Sibyl</h1>
     </header>
-    <div class="row">
-      <div class="primary col">
+    <div class="container">
+      <div class="signin">
       <!--sign in form-->
       <form action="php/signin.php" method="post">
           <h2>Sign In</h2>
@@ -43,7 +43,7 @@
       </form>
       </div>
 
-      <div class="secondary col">
+      <div class="signup">
       <!--sign up form-->
       <form action="php/signup.php" method="post">
           <h2>Sign up</h2>

@@ -235,7 +235,7 @@ p {
 body {
   position: relative
 }
-/* .container {
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5em;
@@ -244,11 +244,13 @@ body {
   "signin signin"
   "signup signup"
   "main-footer main-footer";
-} */
+}
   .main-header{
   		width: 100%;
   		position: fixed top;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   	}
 
     .signin {

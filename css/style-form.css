@@ -247,11 +247,16 @@ body {
   .main-header{
   		width: 100%;
   		position: fixed top;
+      text-align: center;
   	}
 
     .signin {
-    padding-top: 5em;
+    padding: 3em;
     }
+    .signup {
+      padding: 3em;
+    }
+
   	.main-footer {
   		width: 100%;
   		font-size: 20px;

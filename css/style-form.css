@@ -55,7 +55,7 @@ select {
   padding: 15px;
   width: 100%;
   background-color: rgba(255,255,255,0.2);
-  color: #fff;
+  color: #705d56;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   font-weight: 300;
@@ -153,23 +153,47 @@ p {
     100% { background-position: 0 0; }
 }
 /* --------------------------- Layout Containers -------------------------- */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "main-header main-header"
+  "signin signup"
+  "main-footer main-footer";
+}
 .main-header {
     /* -------Base--------------------*/
 	padding-top: .5em;
 	padding-bottom: .5em;
   background-color: #32292f;
-  width: 100%;
-  position: fixed;
+  /* position: fixed; */
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  z-index: 1000;
+  /* z-index: 1000; */
+  grid-area: main-header;
+}
+.signin {
+  grid-area: signin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
-
+.signup {
+  grid-area: signup;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10em;
+}
 .main-footer {
     /* -------Base--------------------*/
 	text-align: center;
+  grid-area: main-footer;
 }
+
+
 .name {
     /* -------Base--------------------*/
     font-size: 30px;
@@ -177,17 +201,7 @@ p {
     text-transform: uppercase;
     font-weight: 300;
 }
-.col {
-    /* -------Base--------------------*/
-	padding-right: 1em;
-	padding-left: 1em;
-  border: 5px black;
-  height: 1000px;
-/* -----------------------Flex--------------------*/
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
+
 .main-footer {
     /* -------Base--------------------*/
 	background-color: #32292f;
@@ -200,23 +214,8 @@ p {
   position: fixed bottom;
 }
 /* -----------------------Flex--------------------*/
-.row {
-  flex: 1;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 
-.form-items {
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-.secondary {
-  margin-top: 2em;
-}
 
 .signuperror {
   color: #32292f;
@@ -228,38 +227,43 @@ p {
 
 /* Media Containers*/
 
-@media screen and (max-width: 480px) {
-  /* -----------------------Flex--------------------*/
-    .main-header,
-    .row,
-    .col,
-    .form-items,
-    .navbar {
-    display: flex;
-  }
-  .main-header {
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  }
+@media (max-width: 480px) {
+  html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "main-header main-header"
+  "signin signin"
+  "signup signup"
+  "main-footer main-footer";
+}
+  .main-header{
+  		width: 100%;
+  		position: fixed top;
+  	}
 
-  .col {
-  flex: 1;
-  flex-direction: column;
-    flex-basis: 0;
-  }
+    .signin {
+    padding-top: 5em;
+    }
+  	.main-footer {
+  		width: 100%;
+  		font-size: 20px;
+  		padding-bottom: 3em;
+      position: fixed bottom;
+  	}
 
-  .row {
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-  .primary {
-    margin-top: 5em;
-  }
+
+  	form {
+  		min-height: 50px;
+  		background-color: rgba(255,255,255,0.1);
+  	}
+
 h2,
 h3 {
 	text-align: center;
@@ -272,67 +276,24 @@ h3 {
 form {
   max-width: 450px;
 }
-  .main-header{
-    width: 100%;
-  }
-	.row {
-		width: 90%;
+
+	.container {
+		width: 100%;
 		margin: 0 auto;
   }
-/* -----------------------Flex--------------------*/
-  .main-header,
-  .row,
-  .col,
-  .form-items,
-  .navbar {
-  display: flex;
-}
-.main-header {
-flex-direction: column;
-align-items: center;
-}
 
-.col {
-flex: 1;
-flex-direction: column;
-  flex-basis: 0;
-}
 
-.row {
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-basis: 0;
-}
 
 }
 @media (min-width: 750px) {
     /* -------Base--------------------*/
-	.main-header{
-    width: 100%;
-  }
 
-	.row {
-		width: 80%;
-		max-width: 1150px;
+
+	.container {
+		width: 100%;
 	}
 /* -----------------------Flex--------------------*/
-.main-header {
-flex-direction: row;
-justify-content: center;
-flex-grow: 1;
-}
 
-.col {
-  flex-basis: 0;
-  flex-direction: column;
-}
-.row {
 
-  flex-direction: row;
-
-}
 
 }

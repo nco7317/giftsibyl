@@ -157,6 +157,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 5em;
   grid-template-areas:
   "main-header main-header"
   "signin signup"
@@ -237,7 +238,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 5em;
+  grid-gap: 5em;
   grid-template-areas:
   "main-header main-header"
   "signin signin"

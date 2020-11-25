@@ -156,6 +156,7 @@ p {
 
 .container {
   display: grid;
+  color: #fff;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5em;
   grid-template-areas:
@@ -201,6 +202,7 @@ p {
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
+    text-align: center;
 }
 
 .main-footer {

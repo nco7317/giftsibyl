@@ -6,7 +6,7 @@ require 'php/connection.php';
 <html lang="en">
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width">  <!-- for mobile device layout -->
-		<title>Gift Sibyl</title>
+		<title>Gift Registry</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
@@ -15,7 +15,7 @@ require 'php/connection.php';
 
 	<body>
 		<header id="top" class="main-header">
-				<h1 class = "name">Gift Sibyl</h1>
+				<h1 class = "name">Gift Registry</h1>
 			<ul class ="navbar">
 						<li><a href="welcome.php">Welcome</a></li>
 						<li><a href="my_gifts.php">My Gifts</a></li>
@@ -28,8 +28,8 @@ require 'php/connection.php';
 	 <img class="gift_img" src="img/gift.png" alt="Gift">
 </div>
 
-		<div class="row">
-		<div class="welcome col">
+		<div class="container">
+		<div class="welcome">
 			<?php echo"<h2>Welcome ".$_SESSION['first_name']."</h2>" ?>
 				<p>Welcome to Gift Registry!</p>
         <p> This site was created to allow family and friends to know exactly what gifts to get each other for special occassions.
@@ -39,13 +39,13 @@ require 'php/connection.php';
 
 		</div>
 
-		<div class="primary col">
+		<div class="mygifts">
 			<h2>My Gifts</h2>
 			<a href="my_gifts.php"><button class="glow" type="button">My Gifts</button></a>
 		</div>
 
-		<div class="secondary col">
-			<h2>My Groups</h2>
+		<div class="allgifts">
+			<h2>All lists</h2>
 			<a href="everyone.php"><button class="glow" type="button">All List's</button></a>
 		</div>
 		</div>

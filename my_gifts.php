@@ -24,21 +24,21 @@ session_start();
     <!--nav menu separation-->
   </header>
 
-  <div class="row">
+  <div class="container">
 
-<div class="primary col">
+<div class="inst">
   <h2>Instructions</h2>
   <form>
-  <ul class="inst">
+  <ul>
     <li>Name: Enter a name</li>
     <li>Price: No need to use dollar sign. Round up the price to the nearest whole number - ex: 19.99 -> 20</li>
     <li>Link: Enter the full link of the site</li>
     <li>Notes: Enter notes if necessary</li>
   </ul>
 </form>
-  <br>
-  <br>
-  <h2>Insert a gift you want here!</h2>
+</div>
+<div class="insert">
+    <h2>Insert a gift you want here!</h2>
     <form action="php/mylist.php" method="post" enctype="multipart/form-data">
 
         <fieldset class="form-items">
@@ -61,7 +61,7 @@ session_start();
     </form>
     </div>
 
-    <div class="secondary col">
+    <div class="view">
     <!--sign in form-->
 
     <?php echo"<h2>".$_SESSION['first_name']." ".$_SESSION['last_name']."'s List</h2>" ?>

@@ -216,7 +216,7 @@ p {
   text-transform: uppercase;
   font-weight: 300;
   height: 8em;
-  position: fixed bottom;
+  /* position: fixed bottom; */
 }
 /* -----------------------Flex--------------------*/
 

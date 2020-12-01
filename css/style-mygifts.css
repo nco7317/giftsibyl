@@ -305,7 +305,7 @@ label {
   text-transform: uppercase;
   font-weight: 300;
   flex-shrink: 0;
-  position: fixed bottom;
+  /* position: fixed bottom; */
   text-align: center;
   grid-area: main-footer;
 }

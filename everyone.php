@@ -24,9 +24,9 @@ session_start();
     <!--nav menu separation-->
   </header>
 
-  <div class="row">
+  <div class="container">
 
-    <div class="primary col">
+    <div class="view">
     <!--sign in form-->
 <h2>Get someone a gift!</h2>
 

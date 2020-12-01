@@ -53,10 +53,12 @@ session_start();
           <input type="url" id="g_store" name="g_store" required>
 
           <label title="Write anything important! Ex: This is what I want the most!" class="fieldname" for="g_notes">Notes: </label>
-          <textarea type="text" id="g_notes" name="g_notes" ></textarea>
+          <textarea type="text" id="g_notes" name="g_notes"></textarea>
+          <!-- <button type="submit" class="glow" name="create-list-submit">Create</button> -->
+        </fieldset>
+        <fieldset class="form-items">
           <button type="submit" class="glow" name="create-list-submit">Create</button>
         </fieldset>
-
 
     </form>
     </div>
